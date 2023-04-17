@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>homework</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #0074D9, #2ECC40);
+      }
+
+      h1 {
+        text-align: center;
+        color: blue;
+      }
+
+      h2 {
+        text-align: center;
+        color: red;
+      }
+
+      .firstdiv {
+        position: absolute;
+        left: 50%;
+        top: 43%;
+        transform: translate(-50%, -50%);
+        background-color: #03E0EA;
+        width: 70%;
+        height: 40%;
+        padding: 20px;
+        border-radius: 10px; 
+        display: flex; 
+        justify-content: center; 
+      }   
+      
+      .photo-container {
+        position: relative;
+        margin-right: 77px;
+        width: 77px;
+        height: 77px;
+        justify-content: center;
+      }
+
+      .photo {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: 50px;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      form {
+        position: absolute;
+        left: 5%;
+        top: 53%;
+        margin-top: 18px;
+        display: flex;
+      }
+
+      form label {
+        color: red;
+      }
+
+      .secondform {
+        margin-top: 6%;
+      }
+
+      input[type="text"] {
+        padding-left: 350%;
+        height: 60%;
+      }
+
+      .seconddiv {
+        margin: auto; 
+        height: 25vh;
+        width: 95vh;
+        background-color: rgb(57, 142, 212);
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        border-radius: 4vh;;
+        transform: translate(-50%, -50%);
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>პიცა ჰაუსი</h1>
+    <h2>შეუკვეთე პიცა სახლიდან</h2>
+    <div class="firstdiv">
+      <div class="photo-container">
+        <input type="checkbox" id="pica1" name="pica1" value="pica">
+        <label for="pica1">ტიპი 1</label>
+        <img class="photo" src="https://via.placeholder.com/77x77.png" alt="Placeholder image">
+      </div>
+      <div class="photo-container">
+        <input type="checkbox" id="pica2" name="pica2" value="pica">
+        <label for="pica2">ტიპი 2</label>
+        <img class="photo" src="https://via.placeholder.com/77x77.png" alt="Placeholder image">
+      </div>
+      <div class="photo-container">
+        <input type="checkbox" id="pica3" name="pica3" value="pica">
+        <label for="pica3">ტიპი 3</label>
+        <img class="photo" src="https://via.placeholder.com/77x77.png" alt="Placeholder image">
+      </div>
+      <div class="photo-container">
+        <input type="checkbox" id="pica4" name="pica4" value="pica">
+        <label for="pica4">ტიპი 4</label>
+        <img class="photo" src="https://via.placeholder.com/77x77.png" alt="Placeholder image">
+      </div>
+      <form action="/action_page.php">
+        <label for="cars">აირჩიე მანქანა</label>
+        <select name="cars" id="cars">
+          <option value="პატარა">პატარა</option>
+          <option value="დიდი">დიდი</option>
+        </select>
+      </form> 
+      <form action="/action_page.php" class="secondform">
+        <div class="form-group">
+          <label for="fname" >დამატებითი მოთხოვნები</label><br>
+          <input type="text" id="fname" name="fname" ><br>
+        </div>
+      </form>
+    </div>
+    <div class="seconddiv"> 
+      <form action="/action_page.php">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">გავეცანი და ვეთანხმები საიტის წესებს</label><br>
+        <input type="submit" value="შეკვეთის დასრულება">
+  </body>
+</html>  
