@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    border: 1px solid rgb(227,143,49);
+    width: 90vw;
+
+    height:55vh;
+    margin: auto;
+    margin-top: 4rem;
+    background: rgb(227,143,49);
+    background: linear-gradient(0deg, rgba(227,143,49,1) 0%, rgba(206,174,134,1) 100%);
+    display: flex;
+    justify-content: space-between;
+}
+#left{
+width: 50vw;
+height: 40vh;
+margin-top: 2em;
+margin-left: 3em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#right{
+width: 30vw;
+height: 44vh;
+margin-top: 1.5em;
+margin-right: 4em;
+}
+#left input{
+    margin-top: 2.5rem;
+    width: 20rem;
+}
+#right{
+    background-color: #f68303;
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    align-items: center;
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#right input{
+    border: none;
+    outline: none;
+    margin-left: 1em;
+border-bottom: 2px solid black;
+background: none;
+padding-left: 0.2em;
+    width: 20rem;
+}
+#right label{
+margin-top: 1.6em;
+margin-left: 1em;
+}
+
+
+#footer{
+    border: 1px solid rgb(227,143,49);
+    width: 90vw;
+
+    height:55vh;
+    margin: auto;
+    margin-top: 4rem;
+    background: rgb(202,213,207);
+    background: linear-gradient(0deg, rgba(202,213,207,1) 0%, rgba(75,190,120,1) 100%);
+    display: flex;
+    justify-content: space-between;  
+}
+#left2{
+width: 45vw;
+height: 40vh;
+margin-top: 2em;
+margin-left: 3em;
+display: flex;
+flex-direction: column;
+padding-bottom: 2em;
+}
+#left2 span{
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+#left2 input{
+    margin-bottom: 1em;
+}
+textarea{
+    margin-top: 0.7em;
+    background-color: #c4c8c6;
+    border: 2.7px solid #96a4b6;
+    outline: none;
+}
+#right2{
+width: 30vw;
+height: 44vh;
+margin-top: 1.5em;
+margin-right: 4em;
+
+
+}
+#right2 span{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: x-large;
+}
+.box{
+    margin-top: 1em;
+    display: flex;
+}
+.box input{
+    margin-left: 1em;
+}
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+.kk{
+    flex-direction: row;
+    margin-top: 1em;
+}
+.kk span{
+    background-color: #aedee9;
+    border-radius: 22px;
+}
+</style>
+<body>
+   <div class="text">საკონფერენციო რეგისტრაციის ფორმა</div>
+    <div id="header">
+        <div id="left">
+            <input type="text" name="" id="" placeholder="სახელი">
+            <input type="text" name="" id="" placeholder="გვარი">
+            <input type="text" name="" id="" placeholder="ელ ფოსტა">
+            <input type="text" name="" id="" placeholder="პაროლი">
+        </div>
+        <div id="right">
+            <label for="Name">შეიყვანეთ თემის დასახელება</label>
+            <input type="text" name="" id="">
+            <label for="Name">შეიყვანეთ თანაავტორები</label>
+            <input type="text" name="" id="">
+            <label for="Name">შეიყვანეთ ტელეფონი</label>
+            <input type="text" name="" id="">
+            <label for="">DAte</label>
+            <input type="month" name="" id="">
+        </div>
+    </div>
+    <div id="footer">
+        <div id="left2">
+            <span>ატვირთეთ ფაილი</span>
+            <input type="file" name="" id="">
+            <div class="line">ატვირთეთ ფაილი </div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div id="right2">  <span>აირჩიეთ სქესი</span>
+            <div class="box">
+                <input type="radio" name="nam" id="" value="Check 1">მამრობითი
+                <input type="radio" name="nam" id="" value=" Check 2">მდედრობითი
+            </div>
+            <span>პრეზენტაციის ენა</span> <br>
+            <div class="checkbox">
+                
+                    <div class="kk"> <input type="checkbox" name="nn" id=""><span>ქართული </span> </div>
+                    <div class="kk"> <input type="checkbox" name="nn" id=""><span>ინგლისური </span> </div>
+                    <div class="kk">  <input type="checkbox" name="nn" id=""><span>სხვა </span>
+        </div>
+            </div>
+    </div>
+    
+</body>
+</html>
